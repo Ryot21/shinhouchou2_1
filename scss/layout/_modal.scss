@@ -1,0 +1,61 @@
+/* モーダルCSS */
+.l-modal--area {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    .l-modal--bg {
+        width: 100%;
+        height: 100%;
+        background: $modal-bg;
+    }
+    .l-modal--wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        width: 70%;
+        max-width: 700px;
+        padding: 10px 30px;
+    }
+    .l-modal--contents{
+        img{}
+    }
+}
+
+
+.l-modal--closeBtn {//閉じるボタン
+    width: 30px;
+    height: 30px;
+    color: $main-color--b;
+    font-size: 16px;
+    background: $modal-close--bg;
+    border: 1px solid $main-color--b;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    cursor: pointer;
+    .x{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+  }
+
+.l-modal--btn {
+    padding: 10px;
+    background-color: $main-color-bg;
+    border: 1px solid $border-color--b;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#openModal {
+    
+}

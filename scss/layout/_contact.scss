@@ -1,0 +1,15 @@
+//お問い合わせエリア
+.l-contact--area{
+	width: 100%;
+	height: auto;
+	&.-bg--color{
+		position: relative;
+		// background-color: $contact-color--bg;
+		padding-bottom: 15px;
+		@include mq(tb){
+			padding-bottom: 30px;
+		}
+	}
+	// コンタクトの要素は、「./layout/_flex.scss」内の
+	// 「l-flex--contents」を使用してください。
+}

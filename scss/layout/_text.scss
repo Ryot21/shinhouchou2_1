@@ -1,0 +1,614 @@
+
+.l-text{
+    line-height: 1.5;
+    &.-lh-1{
+        line-height: 1;
+    }
+    &.-sp-lh-1{
+        @include mq(sp){
+            line-height: 1;
+        }
+    }
+    &.-sp-lh-1_5{
+        @include mq(sp){
+            line-height: 1.5;
+        }
+    }
+    &.-lh-12{
+        line-height: 1.2;
+    }
+    &.-lh-2{
+        line-height: 2;
+    }
+    &.-lh-25{
+        line-height: 2.5;
+    }
+    &.-lh-2_s{
+        @include mq(sp){
+            line-height: 2;
+        }
+    }
+    &.-lh-4_s{
+        @include mq(sp){
+            line-height: 4;
+        }
+    }
+    &.-lts-2{
+        @include mq(tb){
+            letter-spacing: 2px;
+        }
+    }
+    &.-lts-8{
+        @include mq(tb){
+            letter-spacing: 8px;
+        }
+    }
+
+        // 大きさ
+        &.-size10{
+            font-size: 12px;
+            @include mq(sp){
+                font-size: 10px;
+            }
+        }
+        &.-sizeM{
+            font-size: 12px;
+            @include mq(tb){
+                font-size: clamp(12px, 1.3vw, 18px);
+            }
+            &.-v02{
+                @include mq(tb){
+                    font-size: clamp(12px, 1vw, 18px);
+                }
+            }
+            &.-v03{
+                @include mq(tb){
+                    font-size: clamp(10px, 1vw, 16px);
+                }
+            }
+            &.-s10{
+                @include mq(sp){
+                    font-size: 10px;
+                }
+            }
+            &.-s11{
+                @include mq(sp){
+                    font-size: 11px;
+                }
+            }
+            &.-s16{
+                @include mq(sp){
+                    font-size: 16px;
+                }
+            }
+        }
+        &.-sizeL{//24px
+            font-size: 18px;
+            @include mq(tb){
+                font-size: clamp(10px, 1.8vw, 24px);
+            }
+            &.-s12{
+                @include mq(sp){
+                    font-size: 12px;
+                }
+            }
+            &.-s14{
+                @include mq(sp){
+                    font-size: 14px;
+                }
+            }
+            &.-s15{
+                @include mq(sp){
+                    font-size: 15px;
+                }
+            }
+            &.-s16{
+                @include mq(sp){
+                    font-size: 16px;
+                }
+            }
+    
+        }
+        &.-sizeLL{//30px
+            font-size: 18px;
+            @include mq(tb){
+                font-size: clamp(10px, 2.5vw, 28px);
+            }
+            &.-v02{
+                @include mq(tb){
+                    font-size: clamp(10px, 2.5vw, 26px);
+                }
+            }
+
+            &.-s27{
+                @include mq(sp){
+                    font-size: 27px;
+                }
+            }
+            &.-s24{
+                @include mq(sp){
+                    font-size: 24px;
+                }
+            }
+            &.-s14{
+                @include mq(sp){
+                    font-size: 14px;
+                }
+            }
+            &.-s13{
+                @include mq(sp){
+                    font-size: 13px;
+                }
+            }
+            &.-s17{
+                @include mq(sp){
+                    font-size: 17px;
+                }
+            }
+            &.-s18{
+                @include mq(sp){
+                    font-size: 18px;
+                }
+            }
+        }
+        &.-size3L{
+            font-size: 24px;
+            &.-s20{
+                @include mq(sp){
+                    font-size: 20px;
+                }
+            }
+            &.-s30{
+                @include mq(sp){
+                    font-size: 30px;
+                }
+            }
+            &.-s32{
+                @include mq(sp){
+                    font-size: 32px;
+                }
+            }
+            &.-s40{
+                @include mq(sp){
+                    font-size: 40px;
+                }
+            }
+            @include mq(tb){
+                font-size: 2.5rem;
+            }
+            @include mq(tb-pc1400){
+                font-size: 3.5rem;
+            }
+        }
+        &.-size3L_2{
+            font-size: 24px;
+            &.-s30{
+                @include mq(sp){
+                    font-size: 30px;
+                }
+            }
+            &.-s32{
+                @include mq(sp){
+                    font-size: 32px;
+                }
+            }
+            @include mq(tb){
+                font-size: 2.5rem;
+            }
+            @include mq(tb-pc1400){
+                font-size: 2.5rem;
+            }
+        }
+        &.-size4L{//48px
+            font-size: 60px;
+            @include mq(tb){
+                font-size: 5.5rem;
+            }
+            @include mq(tb-pc1400){
+                font-size: 7rem;
+            }
+            &.-v02{
+                
+                @include mq(tb){
+                    font-size: 5.5rem;
+                }
+            }
+        }
+        &.-s10{
+            @include mq(sp){
+                font-size: 10px;
+            }
+        }
+        &.-s12{
+            @include mq(sp){
+                font-size: 12px;
+            }
+        }
+        &.-s14{
+            @include mq(sp){
+                font-size: 14px;
+            }
+        }
+        &.-s15{
+            @include mq(sp){
+                font-size: 15px;
+            }
+        }
+        &.-s16{
+            @include mq(sp){
+                font-size: 16px;
+            }
+        }
+        &.-s17{
+            @include mq(sp){
+                font-size: 17px;
+            }
+        }
+        &.-s18{
+            @include mq(sp){
+                font-size: 18px;
+            }
+        }
+        &.-s20{
+            @include mq(sp){
+                font-size: 20px;
+            }
+        }
+        &.-s24{
+            @include mq(sp){
+                font-size: 24px;
+            }
+        }
+        &.-s30{
+            @include mq(sp){
+                font-size: 30px;
+            }
+        }
+        &.-s32{
+            @include mq(sp){
+                font-size: 32px;
+            }
+        }
+    // 位置
+    &.-left{text-align: start;}
+    &.-center{text-align: center;}
+    &.-right{text-align: end;}
+
+    &.-sp-left{
+        @include mq(sp){
+            text-align: start !important;
+        }
+    }
+    &.-sp-center{
+        @include mq(sp){
+            text-align: center !important;
+        }
+    }
+
+
+    &.-p{
+        position: relative;
+    }
+    &.-hp-c{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 15px;
+    }
+    &.-pd-left{
+        padding-left: 15px;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-45%);
+            width: 2px;
+            height: 85%;
+            background: #333333;
+        }
+    }
+    // 太さ
+    &.-b{font-weight: bold !important;}
+
+    // 形
+    &.-family01{//しっぽり明朝
+        font-family: "shippori-mincho", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    &.-family02{//A1MinchoStd Bold代用
+        font-family: "yu-gothic-pr6n", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    &.-family03{//しっぽり
+        font-family: "source-han-sans-japanese", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    &.-family04{//garamond
+        font-family: "garamond-premier-pro-display", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    &.-family05{//メイリオ
+        font-family:'メイリオ', 'Meiryo', sans-serif;
+    }
+    &.-family06{//Trajan
+        font-family: "trajan-pro-3", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    &.-REQUEST{
+        background: white;
+        a{
+            span{
+                position: relative;
+                display: block;
+                &::after{
+                    content: "REQUEST";
+                    font-size: 11px;
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    @include mq(tb){
+                        font-size: .65vw;
+                    }
+                }
+            }
+        }
+
+    }
+    &.-RESERVE{
+        background: $site-color01;
+        span{
+            position: relative;
+            display: block;
+            &::after{
+                content: "RESERVE";
+                font-size: 11px;
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @include mq(tb){
+                    font-size: .65vw;
+                }
+            }
+        }
+    }
+    &.-TOP{
+        position: relative;
+        &::after{
+            content: "TOP";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-CONCEPT{
+        position: relative;
+        &::after{
+            content: "CONCEPT";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-BUILT{
+        position: relative;
+        &::after{
+            content: "BUILT HOUSE";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-SETSUBI{
+        position: relative;
+        &::after{
+            content: "EQUIPMENT";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-LOCATION{
+        position: relative;
+        &::after{
+            content: "LOCATION";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-JYUKYO{
+        position: relative;
+        &::after{
+            content: "JYUKYO QUALITY";
+            font-size: .5vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @include mq(tb){
+                font-size: .3vw;
+                line-height: 1.2;
+            }
+            @include mq(pc){
+                font-size: .5vw;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    // 色
+    &.-white{
+        color: white;
+        a{
+            color: white;
+        }
+    }
+    &.-black{
+        color: black;
+        a{
+            color: black;
+        }
+    }
+    &.-red{
+  
+    }
+    &.-blue{
+    }
+    &.-green{
+        text-shadow: 1px 1px 10px rgb(236, 236, 236);
+    }
+    &.-pink{
+        // color: $text-pink;
+        text-shadow: 1px 1px 10px rgb(238, 238, 238);
+    }
+    &.-s-white{
+        text-shadow: 2px 2px 3px white;
+    }
+    &.-s-red{
+        // text-shadow: 2px 2px 3px $site-color01;
+        // filter: drop-shadow(0px 0px 1px #6D0000);
+    }
+    &.-site-c{
+        color: $site-color01;
+        a{
+            color: $site-color01;
+        }
+    }
+    .w-auto{
+        display: inline-block;
+        width: auto;
+        // ※
+        &.-komezirushi{
+            position: relative;
+            &::after{
+                content: "※リビングタウンとは4要素「暮らす・働く・学ぶ・遊ぶ」が揃う街";
+                position: absolute;
+                bottom: -60%;
+                left: 0%;
+
+                font-size: 11px;
+                @include mq(tb){
+                    bottom: -40%;
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+
+    // 西武池袋線
+    &.ikebukuro-sen{
+        position: relative;
+        @include mq(tb){
+            display: inline-block !important;
+        }
+        &::after{
+            content: "西武池袋線";
+            position: absolute;
+            top: -50%;
+            left: 9%;
+
+            font-size: 1vw;
+            @include mq(tb){
+                top: -28%;
+                left: 4%;
+                font-size: 1vw;
+            }
+            @include mq(pc){
+                top: -33%;
+                left: 4%;
+                font-size: 16px;
+
+            }
+        }
+    }
+    // 西武池袋線・新宿線
+    &.ikebukuro-shinzyuku-sen{
+        display: inline-block !important;
+        position: relative;
+        &::after{
+            content: "西武池袋･新宿線";
+            position: absolute;
+            top: -50%;
+            left: -6%;
+            width: 110%;
+            font-size: 11px;
+            width: 120%;
+            @include mq(sp){
+                transform: scale(.7);
+            }
+            @include mq(tb){
+                top: -30%;
+                left: -8%;
+                width: 110%;
+                font-size: 1vw;
+            }
+            @include mq(pc){
+                top: -33%;
+                left: 0%;
+                font-size: 16px;
+            }
+        }
+    }
+    // ドット
+    &.dots{
+        position: relative;
+        &::after{
+            content: "・・・・";
+            position: absolute;
+            top: -85%;
+            left: 17.6%;
+            font-size: 7.7vw;
+            @include mq(tb){
+                top: -54%;
+                left: 18%;
+                font-size: 3.25vw;
+            }
+            @include mq(pc){
+                font-size: 2.75vw;
+            }
+        }
+    }
+    // アイコン
+    &.iconTitle{
+        position: relative;
+        padding-left: 2.5vw;
+        .icon{
+            position: absolute;
+            top: 50%;
+            left: -3.5%;
+            transform: translateY(-50%);
+            width: 5vw;
+            height: 5vw;
+            @include mq(tb){
+                left: 0;
+                width: 1.8vw;
+                height: 1.8vw;
+            }
+        }
+    }
+}

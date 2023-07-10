@@ -1,0 +1,291 @@
+.letter{
+	&-s01{
+		letter-spacing: -11px
+	}
+	&-s02{
+		letter-spacing: -17px
+	}
+	&-s03{
+		letter-spacing: -9px
+	}
+}
+
+// -----------------------------------------------
+// 開発中
+//下記スマホ未満
+@include mq(sp){
+	.sp{
+		display: block !important;
+	}
+	.pc,
+	.pc1000-max,
+	.pc1600{
+		display: none !important;
+	}
+}
+//下記スマホ以上
+@include mq(tb){
+	.sp,
+	.pc1600{
+		display: none !important;
+	}
+	.pc1000-max,
+	.pc{
+		display: block !important;
+	}
+}
+
+// ブラウザ1000以上
+@include mq(tb-pc1000){
+	.sp{
+		display: none !important;
+	}
+	.pc1000-max{
+		display: black !important;
+	}
+}
+
+// ブラウザ1400以上
+@include mq(tb-pc1600){
+
+	.pc1600{
+		display: block !important;
+	}
+}
+// 開発中ここまで
+// -----------------------------------------------
+
+
+body{
+	animation: fadein 2s forwards;
+}
+img{
+	pointer-events: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+	vertical-align: bottom;
+}
+
+
+
+
+.w1200{
+	width: 95% !important;
+	max-width: 1200px;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+}
+.w1050{
+	width: 95%;
+	max-width: 1050px;
+	margin: auto;
+}
+.w850{
+	width: 95%;
+	max-width: 850px;
+	margin: auto;
+}
+.w90-s{
+	@include mq(sp){
+		width: 90% !important;
+		margin: auto;
+	}
+}
+.w93-s{
+	@include mq(sp){
+		width: 93% !important;
+		margin: auto;
+	}
+}
+.tb-w95{
+	@include mq(tb){
+		width: 95% !important;
+		margin: auto;
+	}
+}
+
+
+// 幅調整用 margin = 要素外の空間
+// 上のみ
+.l-mgt_5{
+	//mgt=「margin-top」の略です。
+	//文末の数字は、「PC」でも数値に合わせて設計してください。「sp」時は、1/2です。
+	margin-top: 2.5vh !important;
+	@include mq(tb){
+		margin-top: 5vh !important;
+	}
+}
+.l-mgt_10{
+	margin-top: 5vh !important;
+	@include mq(tb){
+		margin-top: 10vh !important;
+	}
+}
+.l-mgt_10{
+	margin-top: 5vh !important;
+	@include mq(tb){
+		margin-top: 10vh !important;
+	}
+}
+.l-mgt_-10{
+	margin-top: -5px !important;
+	@media screen and (min-width: 767px){
+		margin-top: -10px !important;
+	}
+}
+.l-mgt_-30{
+	margin-top: -27px !important;
+	@media screen and (min-width: 767px){
+		margin-top: -30px !important;
+	}
+}
+.l-mgb_-2_s{
+	@include mq(sp){
+		margin-top: -2vh !important;
+	}
+}
+
+
+
+// 下のみ
+.l-mgb_1_s{
+	@include mq(sp){
+		margin-bottom: 1vh !important;
+	}
+}
+.l-mgb_2_s{
+	@include mq(sp){
+		margin-bottom: 2vh !important;
+	}
+}
+.l-mgb_5_s{
+	@include mq(sp){
+		margin-bottom: 5vh !important;
+	}
+}
+.l-mgb_8_s{
+	@include mq(sp){
+		margin-bottom: 8vh !important;
+	}
+}
+.l-mgb_10_s{
+	@include mq(sp){
+		margin-bottom: 10vh !important;
+	}
+}
+.l-mgb_15_s{
+	@include mq(sp){
+		margin-bottom: 15vh !important;
+	}
+}
+.l-mgb_1{
+	margin-bottom: 1vh !important;
+	@include mq(tb){
+		margin-bottom: 1vh !important;
+	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
+		}
+	}
+}
+.l-mgb_2{
+	margin-bottom: 2vh !important;
+}
+.l-mgb_3{
+	margin-bottom : 2vh !important;
+	&.-s_1{
+		@include mq(sp){
+			margin-bottom: 1vh !important;
+		}
+	}
+	@include mq(tb){
+		margin-bottom: 3vh !important;
+	}
+}
+.l-mgb_5{
+	margin-bottom : 2.5vh !important;
+	@include mq(tb){
+		margin-bottom: 5vh !important;
+	}
+}
+.l-mgb_10{
+	margin-bottom : 8vh !important;
+	&.-s_1{
+		@include mq(sp){
+			margin-bottom: 1vh !important;
+		}
+	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
+		}
+	}
+	@include mq(tb){
+		margin-bottom: 10vh !important;
+	}
+}
+.l-mgb_20{
+	margin-bottom : 10vh !important;
+	&.-s_1{
+		@include mq(sp){
+			margin-bottom: 1vh !important;
+		}
+	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
+		}
+	}
+	@include mq(tb){
+		margin-bottom: 20vh !important;
+	}
+}
+
+.l-mgb_or{
+	margin-bottom: 0.4vh;
+	@include mq(tb){
+		margin-bottom: 0.7vh;
+	}
+}
+
+
+
+
+// 幅調整用 padding = 要素内の空間
+// 上のみ
+.l-pdt_5{
+	padding-top : 2.5vh !important;
+	@include mq(tb){
+		padding-top: 5vh !important;
+	}
+}
+.l-pdt_10{
+	padding-top : 5vh !important;
+	@include mq(tb){
+		padding-top: 10vh !important;
+	}
+}
+// 下のみ
+.l-pdb_5{
+	padding-bottom : 2.5vh !important;
+	@include mq(tb){
+		padding-bottom: 5vh !important;
+	}
+}
+.l-pdb_10{
+	padding-bottom : 5vh !important;
+	@include mq(tb){
+		padding-bottom: 10vh !important;
+	}
+}
+
+.border{
+	border-bottom: 1px solid black;
+	@include mq(tb){
+
+	}
+}

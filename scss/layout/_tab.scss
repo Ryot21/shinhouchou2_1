@@ -1,0 +1,68 @@
+
+
+.l-tabs--area{
+    text-align: center;
+    @media screen and (min-width: 767px){
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .tab-item{
+        display: inline-block;
+        width: calc(22% - 10px);
+        margin: 0 5px;
+        font-size: 12px;
+        line-height: 2;
+        color: white;
+        background: #B9B9B9;
+        text-align: center;
+        font-weight: bold;
+        transition: all .3s ease;
+        &:hover{
+            background: #66BBC4;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+        }
+        @media screen and (min-width: 767px){
+            width: 15%;
+            margin: 0 5px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+    input[name="tab-item"] {
+        display: none;
+    }
+    .tab-content {
+        display: none;
+        padding: 45px 0px 40px;
+        margin: auto 10px;
+        clear: both;
+        overflow: hidden;
+        @media screen and (min-width: 767px){
+            margin-left: 14%;
+            margin-right: -5%;
+            padding: 45px 0px 85px;
+        }
+        .tab-content-img{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    #iruma:checked ~ #iruma-content,
+    #tokorozawa:checked ~ #tokorozawa-content,
+    #hannou:checked ~ #hannou-content,
+    #kawagoe:checked ~ #kawagoe-content {
+        display: block !important;
+        // opacity: 1;
+        // transition: all 1s ease;
+    }
+    input:checked + .tab-item {
+        background-color: #66BBC4;
+        color: white;
+        text-shadow: 1px 1px 1px $item-hover--bg;
+        box-shadow: 1px 1px 4px 0px $item-hover--bg;
+        transition: all .3s ease;
+    }
+}

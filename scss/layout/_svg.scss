@@ -1,0 +1,39 @@
+
+
+#sp-btm-contactArea{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    z-index: 9999;
+}
+
+
+// どのサイトでも使えるようにした。
+#pc-right-contactArea{
+	background: $site-color01;
+	border: 1px solid $site-color01;
+    position: fixed;
+    top: 33%;
+    right: 2%;
+    z-index: 9999;
+    .base-bg{
+        max-width: 45px;
+    }
+}
+
+
+svg{
+    &#rightBtn_top{
+        .cls-1{
+            fill: $site-color01;
+        }
+    }
+    #rightBtn_btm{
+        .cls-1{
+            fill: $main-color--w;
+        }
+    }
+}

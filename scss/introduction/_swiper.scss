@@ -1,0 +1,185 @@
+.swiperArea{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    .swiper-container{
+        @include mq(tb){
+            padding: 0 40px;
+        }
+        &.card-swiper{// カードレイアウト
+            margin-bottom: 80px;
+            &:last-child{
+                margin-bottom: 30px;
+                @include mq(tb){
+                    margin-bottom: 80px;
+                }
+            }
+
+            &.-sliderItem01{//画像の大きさで変えること
+                .swiper-button-next,
+                .swiper-button-prev {
+
+                    width: 45px; /* 背景画像の幅を必ず指定 */
+                    height: 45px; /* 背景画像の高さを必ず指定 */
+                    transform: translateY(-50%);
+                    background: gray;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    opacity: 1;
+                    transition: all .5s;
+                    z-index: 6 !important;
+                    @include mq(sp){
+                        top: 50%;
+                        transform: scale(.5, .5) translateY(-50%);
+                    }
+                    @include mq(tb){
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    &::after {
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        content: ""; /* 空指定してデフォルトの矢印を消す */
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                    }
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                .swiper-button-prev {
+                    @include mq(sp){
+                        left: -10px;
+                    }
+                    &::after {
+                        border-width: 11px 14px 11px 0;
+                        border-color: transparent #fff transparent transparent;
+                        right: 25%;
+                    }
+                  }
+                .swiper-button-next {
+                    @include mq(sp){
+                        right: -10px;
+                    }
+                    &::after {
+                      border-width: 11px 0 11px 14px;
+                      border-color: transparent transparent transparent #fff;
+                      left: 55%;
+                    }
+                }
+            }
+        }
+        .swiper-pagination {//ページネーションの位置
+            bottom: 4.5%;
+            z-index: 5 !important;
+
+            @include mq(tb){
+                bottom: 7%;
+            }
+
+            .swiper-pagination-bullet-active{//現在地表示に関しての記述
+                background: $site-color01;
+            }
+            .swiper-pagination-bullet{//ドットの大きさに関する記述
+                transition: .5s all;
+                @include mq(tb){
+                    width: .8vw;
+                    height: .8vw;
+                    margin: 0 .8vw;
+                }
+                &:hover{
+                    background: $site-color01-hover;
+                }
+            }
+        }
+        &.thumbnail{
+            width: 100%;
+            .swiper-wrapper{
+                @include mq(sp){
+                    justify-content: space-between;
+                }
+            }
+            .swiper-slide{
+                &.s-item{
+                    width: calc( 33.3333% - 5px) !important;
+                    height: auto;
+                    padding: 0 2.5px;
+                    margin-bottom: 5px;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    &.r-01{
+                    }
+                    &.r-02{
+                    }
+                    &.r-03{
+                    }
+                    &.r-04{
+                    }
+                    &.r-05{
+                    }
+                    &.r-06{
+                    }
+                }
+            }
+        }
+    }
+}
+
+.g-sliderBox01{
+    .swiper-pagination {
+        @include mq(sp){
+            bottom: 49.7% !important;
+        }
+    }
+}
+
+.swiper-title{
+    width: 100%;
+    margin: auto;
+    @include mq(tb){
+        width: 85%;
+    }
+}
+
+.card{
+    width: 365px;
+    height: auto;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.card-L{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    @include mq(tb){
+        width: 95%;
+        max-width: 1260px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.washatendArea{
+    margin: 0 auto 90px;
+}
+
+.thumbnail .swiper-slide
+ {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.thumbnail .swiper-slide-thumb-active
+ {
+  opacity: 1;
+}
+

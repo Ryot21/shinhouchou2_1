@@ -1,0 +1,60 @@
+#p-setsubi{
+    .swiper-title {
+        position: relative;
+        .balloon2{
+            position: absolute;
+            top: 33%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 19%;
+            height: auto;
+            border-radius: 50%;
+            @include mq(tb){
+                top: 30%;
+                width: 15%;
+                max-width: 150px;
+            }
+            &.-site-balloon-c{
+                background: $site-balloon-color;
+            }
+        }
+        .balloon3{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 19%;
+            height: auto;
+            border-radius: 50%;
+            @include mq(tb){
+                width: 15%;
+                max-width: 150px;
+            }
+            &.-site-balloon-c{
+                background: $site-balloon-color;
+            }
+        }
+    }
+
+
+    .border-bottom{
+        width: 85vw;
+        max-width: 1260px;
+        margin: 0 auto 4vh;
+        border-bottom: 1px solid black;
+        @include mq(tb){
+            width: 70vw;
+            margin: 0 auto 12vh;
+        }
+        &.-s{
+            margin: 0 auto 6vh;
+            @include mq(tb){
+    
+            }
+        }
+        &.-last{
+            margin: 0 auto;
+        }
+    }
+
+}

@@ -1,0 +1,229 @@
+
+
+.l-footer{
+    width: 80%;
+    height: auto;
+    margin: 40px auto !important;
+    @include mq(tb){
+
+    }
+    // 東久留米支店
+    &.-higashikurume{
+        @include mq(tb){
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 60%;
+            height: auto;
+            margin: auto !important;
+            @include mq(sp){
+                margin: auto auto 5px !important;
+            }
+            @include mq(tb){
+                width: 50%;
+                max-width: 330px;
+                margin-right: 25px !important;
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            width: 60%;
+            margin: auto !important;
+            text-align: center;
+            @include mq(tb){
+                width: 30%;
+                margin-left: 25px !important;
+            }
+        }
+    }
+    // 狭山支店
+    &.-sayama{
+        @media screen and (min-width: 767px){
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 80%;
+            height: auto;
+            margin: auto !important;
+            @media screen and (min-width: 767px){
+                width: 50%;
+                max-width: 360px;
+                margin-right: 0 !important;
+            }
+            img{
+
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            margin: auto !important;
+            @media screen and (min-width: 767px){
+                margin-left: 0 !important;
+            }
+        }
+    }
+    // 川越支店
+    &.-kawagoe{
+        @include mq(tb){
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 60%;
+            height: auto;
+            margin: auto !important;
+            @include mq(sp){
+                margin: auto auto 5px !important;
+            }
+            @include mq(tb){
+                width: 50%;
+                max-width: 300px;
+                margin-right: 25px !important;
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            width: 60%;
+            margin: auto !important;
+            text-align: center;
+            @include mq(tb){
+                width: 30%;
+                margin-left: 25px !important;
+            }
+        }
+    }
+    // ふじみ野支店
+    &.-fuzimino{
+        @include mq(tb){
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 60%;
+            height: auto;
+            margin: auto !important;
+            @include mq(sp){
+                margin: auto auto 5px !important;
+            }
+            @include mq(tb){
+                width: 50%;
+                max-width: 480px;
+                margin-right: 25px !important;
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            width: 60%;
+            margin: auto !important;
+            text-align: center;
+            @include mq(tb){
+                width: 50%;
+                max-width: 480px;
+                margin-left: 25px !important;
+            }
+        }
+    }
+    // 新所沢支店
+    &.-shintokorozawa{
+        @include mq(tb){
+            width: 50%;
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 55%;
+            height: auto;
+            margin: auto !important;
+            @include mq(sp){
+                margin: auto auto 15px !important;
+            }
+            @include mq(tb){
+                width: 50%;
+                max-width: 480px;
+                margin-right: 25px !important;
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            width: 55%;
+            margin: auto !important;
+            text-align: center;
+            @include mq(tb){
+                width: 50%;
+                max-width: 480px;
+                margin-left: 25px !important;
+            }
+        }
+    }
+    // 入間支店
+    &.-iruma{
+        @include mq(tb){
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 60%;
+            height: auto;
+            margin: auto !important;
+            @include mq(sp){
+                margin: auto auto 5px !important;
+            }
+            @include mq(tb){
+                width: 70%;
+                max-width: 330px;
+                margin-right: 25px !important;
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            width: 60%;
+            margin: auto !important;
+            text-align: center;
+            @include mq(tb){
+                width: 30%;
+                margin-left: 25px !important;
+            }
+        }
+    }
+    // 小手指支店
+    &.-kotesashi{
+        @include mq(tb){
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: 40px auto 80px !important;
+        }
+        .l-footer--title{
+            width: 60%;
+            height: auto;
+            margin: auto !important;
+            @include mq(sp){
+                margin: auto auto 5px !important;
+            }
+            @include mq(tb){
+                width: 27%;
+                max-width: 400px;
+                margin-right: 25px !important;
+            }
+        }
+        .l-footer--tel{
+            height: auto;
+            width: 60%;
+            margin: auto !important;
+            text-align: center;
+            @include mq(tb){
+                width: 45%;
+                max-width: 480px;
+                margin-left: 25px !important;
+            }
+        }
+    }
+}

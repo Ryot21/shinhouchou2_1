@@ -1,0 +1,56 @@
+// Sass Document
+
+// 基本設定
+@import "./setting/color";
+@import "./setting/structure";
+@import "./setting/typography";
+
+
+// サイト内（基本パーツ）
+@import "./layout/reset";
+@import "./layout/base";
+@import "./layout/btn";
+@import "./layout/contact";
+@import "./layout/container";
+@import "./layout/contents";
+@import "./layout/flex";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/gaiyo";
+@import "./layout/footer";
+@import "./layout/link";
+@import "./layout/slick";
+@import "./layout/text";
+@import "./layout/youtube";
+@import "./layout/svg";
+
+@import "./layout/test";
+
+// 自作
+@import "./layout/tab";
+@import "./layout/modal";
+
+// テスト
+@import "./layout/test";
+
+// 導入
+@import "./introduction/accordion";
+@import "./introduction/colorBox";
+@import "./introduction/slick";
+@import "./introduction/aos";
+@import "./introduction/menu";
+@import "./introduction/pageTop";
+@import "./introduction/swiper";
+
+
+// 各ページ独自のスタイル
+@import "./page/setsubi";
+
+// アニメーション
+@import "./animetion/fadeIn";
+// @import "./animetion/fristView";
+// @import "./animetion/top";
+// @import "./animetion/playArea";
+// @import "./animetion/gridContents";
+// @import "./animetion/flexContents";
+// @import "./animetion/bundle";

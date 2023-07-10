@@ -1,0 +1,237 @@
+
+// a(画像リンク)
+.l-linkImg{
+	display: block;
+	width: auto;
+	height: auto;
+	//----- hoverアニメーション -----
+	&.-p01{//----- 薄める -----
+		img{
+			@media screen and (min-width: 767px){
+				opacity: 1;
+				transition: all 0.3s ease-in-out;
+				&:hover{
+					opacity: .7;
+				}
+			}
+		}
+	}
+	&.-p02{//----- 影＋動き -----
+        border: 1px solid $item-hover--b;
+        border-radius: 5px;
+		@media screen and (min-width: 767px){
+			margin: auto;
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				border: 1px solid #ffffff00;
+				transform: translate(0, -1px);
+				box-shadow: 0px 0px 7px 0px $item-hover--bg;
+			}
+		}
+	}
+    &.-p03{
+        display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+        }
+    }
+
+
+    &.-contact{
+        display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+        }
+    }
+    &.-contact-box{
+        display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+        }
+        &.-box01{
+            background: $contact-item-1;
+        }
+        &.-box02{
+            background: $contact-item-2;
+        }
+        &.-box03{
+            background: $contact-item-3;
+        }
+        &.-box04{
+            background: $contact-item-4;
+        }
+    }
+    &.-underLine{
+        position: relative;
+        padding: 5px 5px 8px; 
+        margin-bottom: 13px;
+        @media screen and (max-width: 768px){
+            line-height: 1.2;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                width: 100%;
+                height: 1px;
+                background: $item-hover--bg;
+            }
+        }
+        @media screen and (min-width: 767px){
+            background: $main-color-bg;
+            padding: 1% 3px 2%;
+            transition: all  0.5s ease;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                width: 100%;
+                height: 1.5px;
+                background: $item-hover--bg;
+                transform: scale(0, 1);
+                transform-origin: left top;
+                transition: transform 0.5s;
+                }
+            &:hover{
+                background: $yellow-b;
+                &::after {
+                    transform: scale(1, 1);
+                }
+            }
+        }
+        @media screen and (min-width: 1400px){
+            padding: 4% 5px 3%;
+        }
+    }
+    &.-greenBgBtn{
+        color: $main-color--w;
+        background: $contactBtn-color--bg;
+        width: 50%;
+        border-radius: 50px;
+        @include mq(tb){
+            max-width: 292.318px;
+        }
+        img{
+			@media screen and (min-width: 767px){
+				opacity: 1;
+				transition: all 0.3s ease-in-out;
+				&:hover{
+					opacity: .7;
+				}
+			}
+		}
+    }
+}
+// a(電話リンク)
+.l-linkTel{
+	color: $main-color--tel;
+	font-size: 24px;
+	font-weight: bold;
+	@media screen and (min-width: 767px){
+		font-size: 40px;
+	}
+}
+// moreのみ
+.more-lists{
+    .more-list{
+        &:first-child{
+            .l-linkImg{
+                &.-underLine{
+                    &:hover{
+                        background: $contact-item-1;
+                    }
+                }
+            }
+        }
+        &:nth-child(2){
+            .l-linkImg{
+                &.-underLine{
+                    &:hover{
+                        background: $contact-item-2;
+                    }
+                }
+            }
+        }
+        &:nth-child(3){
+            .l-linkImg{
+                &.-underLine{
+                    &:hover{
+                        background: $contact-item-3;
+                    }
+                }
+            }
+        }
+        &:nth-child(4){
+            .l-linkImg{
+                &.-underLine{
+                    &:hover{
+                        background: $contact-item-4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.inline{
+    display: block;
+    transform: scale(1);
+    transition-duration: 0.5s;
+    overflow: hidden;
+    &.-p01{
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+        }
+    }
+}
+
+.l-linkText{
+    font-size: 10px;
+    color: $main-color--b;
+    margin-right: -3%;
+    transition: all .5s;
+    @include mq(tb){
+        font-size: 12px;
+        margin-right: 2%;
+    }
+    &:hover{
+        color: $main-color--gray;
+    }
+    &.-p02{
+        margin-right: -2%;
+        @include mq(tb){
+            margin-right: 2%;
+        }
+    }
+}

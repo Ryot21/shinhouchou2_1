@@ -1,0 +1,71 @@
+
+
+.gaiyo_wrap{
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  @include mq(tb){
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .gaiyo_link{
+    margin: 10px 0px 20px 0px;
+    @include mq(tb){
+      text-align: center;
+      margin: 10px 0px 55px 0px;
+    }
+    a{
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      transition: .3s;
+      color: black;
+      @include mq(tb){
+        // font-size: 180%;
+        position: relative;
+        display: inline-block;
+        transition: .3s;
+        color: #000000;
+      }
+      &::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: #2ecc71;
+        transition: .3s;
+      }
+      &:hover{
+        transform: scale(.95);
+        span{
+          background: #333;
+          color: white;
+        }
+      }
+      span{
+        display: block;
+        border: 1px solid black;
+        color: black;
+        letter-spacing: .5px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+
+.border-box{
+  display: block;
+  border: 1px solid black;
+  color: black;
+  letter-spacing: 0.5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
