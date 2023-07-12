@@ -20,7 +20,7 @@
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/query.colorbox-min.js"></script>
     <script src="js/slick.min.js"></script>
-    <!-- <script src="js/aos.js"></script> -->
+    <script src="js/aos.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/pagetop.js"></script>
 
@@ -61,6 +61,37 @@
 <body class="js_humburgerClose">
 
     <div id="all">
+        <!-- ヘッダー -->
+        <header class="l-header">
+            <div class="l-flex--area">
+                <div class="l-flex--contents -header-bar">
+                    <!-- ロゴ -->
+                    <div class="flexItem -logoArea">
+                        <a href="index.html">
+                            <!-- <img class="sp" src="images/SVG/logo_s.svg" alt="GRANCIA川越 -藤原町1期-"> -->
+                            <img class="" src="images/SVG/logo.svg" alt="GRANCIA川越 -藤原町1期-">
+                        </a>
+                    </div>
+                    <!--  ナビ -->
+                    <div class="flexItem">
+                        <!-- <div class="pc l-header-nav">
+                            <div class="l-header-nav__inner">
+                                <ul class="l-header-nav__lists">
+                                    <li class="l-header-nav__list"><a href="index.html" class="l-text -sizeM -v02 -family01 -center -active">トップ</a></li>
+                                    <li class="l-header-nav__list"><a href="1goutou.html" class="l-text -sizeM -v02 -family01 -center">1号棟</a></li>
+                                    <li class="l-header-nav__list"><a href="3goutou.html" class="l-text -sizeM -v02 -family01 -center">3号棟</a></li>
+                                    <li class="l-header-nav__list"><a href="4goutou.html" class="l-text -sizeM -v02 -family01 -center">4号棟</a></li>
+                                    <li class="l-header-nav__list"><a href="setsubi.html" class="l-text -sizeM -v02 -family01 -center">設備・仕様</a></li>
+                                    <li class="l-header-nav__list"><a href="location.html" class="l-text -sizeM -v02 -family01 -center">周辺環境</a></li>
+                                    <li class="l-header-nav__list"><a href="access.html" class="l-text -sizeM -v02 -family01 -center">アクセス</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <!-- ナビゲーション -->
         <div class="menu_box">
             <div class="el_humburger">
@@ -89,34 +120,63 @@
                             <li><a href="https://www.jyu-g.co.jp/">ホーム</a></li>
                     </ul>
             </div>
-            <ul class="navi2">
+            <!-- <ul class="navi2">
                     <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712780686">見学予約</a></li>
                     <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712780686">資料請求</a></li>
                     <li><a href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">会員登録</a></li>
                     <li><a href="https://www.jyu-g.co.jp">ホーム</a></li>
-            </ul>
+            </ul> -->
         </div>
         <div class="l-container">
-            <div class="l-testBox"></div>
-            <!-- 【　Header　】ファーストビュー -->
-            <div class="l-header l-contents -img-bg">
+            <!-- ファーストビュー -->
+            <div class="l-contents -img-bg">
                 <div class="imgBox">
                     <img class="pc" src="images/bg/header.png" alt="物件の情報">
-                    <img class="sp" src="images/bg/header_s.jpg" alt="物件の情報">
+                    <img class="sp" src="images/bg/header_s.png" alt="物件の情報">
                 </div>
             </div>
-            <!-- トップコンテンツ -->
+            <!-- MAP & 区画 -->
             <div class="l-contents -img">
-                <img class="pc" src="images/bg/top.png" alt="">
-                <img class="sp" src="images/bg/top_s.jpg" alt="">
+                <img class="pc w1200" src="images/bg/map-kukaku_bg.jpg" alt="">
+                <img class="sp" src="images/bg/map-kukaku_bg_s.jpg" alt="">
             </div>
-            <!-- コンテンツ1 -->
-            <div id="content1" class="l-contents -img">
-                <img class="pc" src="images/bg/land.png" alt="">
-                <img class="sp" src="images/bg/land_s.jpg" alt="">
+            <!-- 区画写真 -->
+            <div class="l-contentsBox -slider w1200 l-mgb_10">
+                <div class="l-slider">
+                    <div class="top-slider top-slider01">
+                        <div class="l-slickImg">
+                            <img src="images/slider/sliderItem-01.jpg" alt="現地写真01">
+                        </div>
+                        <div class="l-slickImg">
+                            <img src="images/slider/sliderItem-02.jpg" alt="現地写真02">
+                        </div>
+                        <div class="l-slickImg">
+                            <img src="images/slider/sliderItem-03.jpg" alt="現地写真03">
+                        </div>
+                    </div>
+                </div>
+                <p class="l-text -size10 -right ">現地写真　2023年7月撮影</p>
             </div>
+            <!-- 建築条件付土地とは -->
+            <div class="l-contents -img w1200 l-mgb_10">
+                <img src="images/bg/jyotuki-title.png" alt="建築条件付とは">
+            </div>
+            <div class="l-contents -img-bg l-mgb_10">
+                <div class="imgBox">
+                    <img class="pc w1200" src="images/bg/jyotuki-card.jpg" alt="">
+                </div>
+                <div class="l-contentsBox -card-btn">
+                    <a class="l-linkImg -p03 -border l-text -black -center" href="">
+                        <span>もっと詳しく　></span>
+                    </a>
+                </div>
+            </div>
+
             <!-- contact*4 -->
-            <div class="l-contents -contactArea -box-type"  data-aos="fade">
+            <div class="l-contents -img-bg w1200 l-mgb_10">
+                <img src="images/bg/contact-title.png" alt="各種お問い合せはこちら">
+            </div>
+            <div class="l-contents -contactArea -box-type l-mgb_20">
                 <div class="l-flex--area">
                     <div class="l-flex--contents -contact-box">
                         <div class="flexItem">
@@ -131,7 +191,7 @@
                         </div>
                         <div class="flexItem">
                             <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
-                                <img src="images/btn/contact_box_03_w.png" alt="会員登録">
+                                <img src="images/btn/contact_box_03.png" alt="会員登録">
                             </a>
                         </div>
                         <div class="flexItem">
@@ -143,8 +203,24 @@
                 </div>
             </div>
 
+            <!-- プラン -->
+            <div class="l-contents -img l-mgb_20">
+                <img class="l-mgb_10" src="images/bg/plan-title.png" alt="参考プラン">
+                <img src="images/bg/plan-content.png" alt="">
+            </div>
+
+            <!-- 間取り紹介 -->
+            <div class="l-contents -img-bg">
+                <div class="imgBox -parallax -parallax_bg">
+                    <img src="images/bg/madori_bg_clear.png" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="l-testBox"></div>
             <!-- contact*3 -->
-            <div class="l-contents -contactArea -box-type w1200 w93_s l-mgb_20" style="pointer-events: auto;" data-aos="fade">
+            <!-- <div class="l-contents -contactArea -box-type w1200 w93_s l-mgb_20" style="pointer-events: auto;" data-aos="fade">
                 <div class="l-flex--area">
                     <div class="l-flex--contents -contact-box_okano">
                         <div class="sp flexItem">
@@ -166,11 +242,12 @@
                         </div>
                     </div>
                 </div>
-            </div>            <!-- コンテンツ2 -->
-            <div id="content2" class="l-contents -img">
+            </div> -->
+            <!-- コンテンツ2 -->
+            <!-- <div id="content2" class="l-contents -img">
                 <img class="pc" src="images/bg/location.jpg" alt="">
                 <img class="sp" src="images/bg/location_s.jpg" alt="">
-            </div>
+            </div> -->
             <!-- タブ-コンテンツ -->
             <!-- <div id="content3" class="l-contents -img-bg">
                 <div class="imgBox">
@@ -459,12 +536,14 @@
         });
         // 通常スライダー用
         $(function(){
-            $(".nomal-slider").slick({
+            $(".top-slider").slick({
                 autoplay: true,
                 prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
                 nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                centerMode: true, //要素を中央寄せ
+                // centerPadding:'50px', //両サイドの見えている部分のサイズ
                 responsive: [ // ブレイクポイントごとに設定を変更
                     {
                         breakpoint: 480,
@@ -477,62 +556,7 @@
                     }
                 ]
             });
-            $('.nomal-slider2').slick({
-                infinite: true, // 画像遅延読み込み
-                autoplay: true, // 自動再生
-                autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
-                speed: 10500,
-                cssEase: 'linear',
-                arrows: false,
-                dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
-                centerMode: true, //要素を中央寄せ
-                centerPadding:'0px', //両サイドの見えている部分のサイズ
-                slidesToShow:7, // 一度に見えているスライドの数
-                slidesToScroll:1, // スライドが切り替わる際の画像数
-                responsive: [ // ブレイクポイントごとに設定を変更
-                    {
-                        breakpoint: 1980,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            autoplaySpeed: 0,
-                            arrows :false,
-                            speed: 8500, // fade時の切り替えのスピード
-                            cssEase: 'linear', // easing効果を指定
-                            // centerMode: false, //要素を中央寄せ
-                        }
-                    }
-                ]
-            });
-        });
-        // サムネイルスライダー用
-        const sliderThumbnail  = new Swiper(".thumbnail", {
-            slidesPerView: 6, // サムネイルの枚数
-        });
-        const swiperMain = new Swiper(".main", {
-            loop: true,
-            pagination:{
-                el:".swiper-pagination",
-                type:"bullets",
-                clickable:"true"
-            } ,
-            thumbs: {
-                swiper: sliderThumbnail,
-            },
+
         });
     </script>
 </body>

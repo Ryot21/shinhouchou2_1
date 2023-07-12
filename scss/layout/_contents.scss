@@ -19,9 +19,9 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				&.-parallax_bg{//ここに背景を指定する。
-					background-image: url(../images/bg/header_bg_s.jpg);
+					background-image: url(../images/bg/madori_bg_s.jpg);
 					@include mq(tb){
-						background-image: url(../images/bg/header_bg.jpg);
+						background-image: url(../images/bg/madori_bg.jpg);
 					}
 				}
 			}
@@ -52,6 +52,18 @@
 					padding: 8% 23%;
 				}
 			}
+
+			// カードレイアウト内のボタン
+			&.-card-btn{
+				top: 80%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 50%;
+				@include mq(tb){
+					top: 82.5%;
+					width: 20%;
+				}
+			}
 			.l-contentsBox--wrapper{
 				width: 100%;
 				height: auto;
@@ -73,6 +85,7 @@
 	&.-slider{
 		//下記スマホ以上
 		@include mq(tb){
+			
 		}
 	}
 }

@@ -146,6 +146,10 @@
 			}
 		}
     }
+    &.-border{
+        padding: 2vh 0;
+        border: 1px solid $main-color--b;
+    }
 }
 // a(電話リンク)
 .l-linkTel{
